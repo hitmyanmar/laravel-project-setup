@@ -261,45 +261,7 @@ Route::middleware(['auth'])->group(function () {
 
 ---
 
-# 13. Optional — Disable Email Verification Completely
-
-Laravel Starter Kits use Laravel Fortify for authentication.
-
-If you want to completely disable the email verification feature, open:
-
-```text
-config/fortify.php
-```
-
-Find:
-
-```php
-Features::emailVerification(),
-```
-
-and remove or comment it out.
-
-Example:
-
-```php
-'features' => [
-    Features::registration(),
-    Features::resetPasswords(),
-    // Features::emailVerification(),
-    Features::twoFactorAuthentication([
-        'confirm' => true,
-        'confirmPassword' => true,
-    ]),
-],
-```
-
-> If you disable email verification in Fortify, you may also need to remove frontend references to verification routes.
-
-The React starter kit uses generated type-safe routes, so references to routes that no longer exist may cause frontend build errors.
-
----
-
-# 14. Authentication Already Included
+# 13. Authentication Already Included
 
 The React Starter Kit already includes authentication features such as:
 
@@ -317,7 +279,7 @@ So you do not need to build authentication from scratch before starting your pro
 
 ---
 
-# 15. Important React Starter Kit Files
+# 14. Important React Starter Kit Files
 
 Most frontend code is located inside:
 
@@ -383,7 +345,7 @@ database/migrations/
 
 ---
 
-# 16. React Starter Kit Stack
+# 15. React Starter Kit Stack
 
 The current Laravel React Starter Kit uses:
 
