@@ -30,30 +30,16 @@ Choose a directory where you want to create your project.
 
 Then clone the official Laravel repository.
 
-## SSH
+## Using SSH
 
 ```bash
-git clone git@github.com:laravel/laravel.git my-project
+git clone git@github.com:laravel/laravel.git <project name>
 ```
 
-## HTTPS
+## OR using HTTPS
 
 ```bash
-git clone https://github.com/laravel/laravel.git my-project
-```
-
-Replace:
-
-```text
-my-project
-```
-
-with your own project name.
-
-Example:
-
-```bash
-git clone git@github.com:laravel/laravel.git blogging-system
+git clone https://github.com/laravel/laravel.git <project name>
 ```
 
 ---
@@ -63,13 +49,7 @@ git clone git@github.com:laravel/laravel.git blogging-system
 Move into the project directory.
 
 ```bash
-cd my-project
-```
-
-Example:
-
-```bash
-cd blog
+cd <project name>
 ```
 
 ---
