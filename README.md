@@ -76,50 +76,6 @@ https://github.com/laravel/livewire-starter-kit
 
 ---
 
-# Before You Start
-
-Before following any of the setup guides, make sure your development environment is ready.
-
-You will need:
-
-- PHP
-- Composer
-- Node.js
-- NPM
-- Git
-- A database such as MySQL, PostgreSQL or SQLite
-
-👉 [Environment Setup & Requirements](./environment-setup.md)
-
-You can quickly check your environment with:
-
-```bash
-php -v
-composer -V
-node -v
-npm -v
-git --version
-```
-
-If all of these commands work correctly, you are ready to continue.
-
----
-
-# Project Structure
-
-```text
-laravel-setup-guides/
-├── README.md
-├── environment-setup.md
-├── laravel.md
-├── vue-starter-kit.md
-├── react-starter-kit.md
-├── svelte-starter-kit.md
-└── livewire-starter-kit.md
-```
-
----
-
 # Which One Should I Choose?
 
 If you are not sure which Laravel project to use:
@@ -140,28 +96,6 @@ If you prefer to stay mostly inside Laravel and PHP, Livewire is a good option.
 
 ---
 
-# General Setup Flow
-
-Although each project is slightly different, the general setup process is usually:
-
-```text
-1. Clone the official Laravel repository
-2. Enter the project directory
-3. Remove the existing Git history
-4. Initialize your own Git repository
-5. Install Composer dependencies
-6. Create the .env file
-7. Generate the application key
-8. Configure the database
-9. Run database migrations
-10. Install frontend dependencies
-11. Start the development servers
-```
-
-Each guide explains these steps in more detail.
-
----
-
 # Important
 
 These projects are cloned directly from the official Laravel repositories.
@@ -172,39 +106,9 @@ After cloning, the guides will normally ask you to remove the existing `.git` di
 rm -rf .git
 ```
 
-and initialize a fresh Git repository:
-
-```bash
-git init
-```
-
 This removes the Laravel repository's Git history and lets you start your own project history.
 
 > Removing `.git` does not delete your Laravel project files. It only removes the existing Git repository information.
-
----
-
-# Development Servers
-
-For most Laravel projects, you will normally run two development servers.
-
-### Laravel
-
-```bash
-php artisan serve
-```
-
-### Frontend
-
-```bash
-npm run dev
-```
-
-Laravel normally runs at:
-
-```text
-http://127.0.0.1:8000
-```
 
 ---
 
@@ -251,10 +155,6 @@ composer -V
 node -v
 npm -v
 ```
-
-and compare your environment with:
-
-👉 [Environment Setup & Requirements](./environment-setup.md)
 
 ---
 
